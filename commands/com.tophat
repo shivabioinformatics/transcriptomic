@@ -1,0 +1,18 @@
+#!/bin/bash
+DATADIR=/Users/labuser3/transcriptomic_project/rna_seq_Arabidopsis_thaliana/data/
+WORKDIR=/Users/labuser3/transcriptomic_project/rna_seq_Arabidopsis_thaliana/tophat/
+ANNOT=/Users/labuser3/transcriptomic_project/rna_seq_Arabidopsis_thaliana/data/athal_genes.gtf
+BWT2IDX=/Users/labuser3/transcriptomic_project/rna_seq_Arabidopsis_thaliana/data/athal
+ANNOTIDX=/Users/labuser3/transcriptomic_project/rna_seq_Arabidopsis_thaliana/data/athal_transcriptome  # You were missing this variable!
+
+mkdir -p $WORKDIR/Day8
+tophat2 -o $WORKDIR/Day8 -p 10 --max-multihits=10 \
+        -G $ANNOT --transcriptome-index $ANNOTIDX \
+        $BWT2IDX \
+        $DATADIR/Day8.fastq
+
+mkdir -p $WORKDIR/Day16
+tophat2 -o $WORKDIR/Day16 -p 10 --max-multihits=10 \
+        -G $ANNOT --transcriptome-index $ANNOTIDX \
+        $BWT2IDX \
+        $DATADIR/Day16.fastq

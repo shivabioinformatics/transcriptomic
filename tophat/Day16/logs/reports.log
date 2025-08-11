@@ -1,0 +1,11 @@
+tophat_reports v2.0.14 (4318)
+---------------------------------------
+[samopen] SAM header is present: 1 sequences.
+	Loading 4...done
+	Loading ...done
+Loaded 512 GFF junctions from /workspace/rna_seq_Arabidopsis_thaliana/tophat//Day16/tmp/athal.juncs.
+Loaded 532 junctions
+Printing junction BED track...done
+Printing insertions...done
+Printing deletions...done
+Found 313 junctions from happy spliced reads

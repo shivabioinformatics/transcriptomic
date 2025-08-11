@@ -1,0 +1,31 @@
+
+[2025-08-11 22:47:33] Beginning TopHat run (v2.0.14)
+-----------------------------------------------
+[2025-08-11 22:47:33] Checking for Bowtie
+		  Bowtie version:	 2.2.3.0
+[2025-08-11 22:47:33] Checking for Bowtie index files (transcriptome)..
+[2025-08-11 22:47:33] Checking for Bowtie index files (genome)..
+[2025-08-11 22:47:33] Checking for reference FASTA file
+	Warning: Could not find FASTA file /workspace/rna_seq_Arabidopsis_thaliana/data/athal.fa
+[2025-08-11 22:47:33] Reconstituting reference FASTA file from Bowtie index
+  Executing: /home/software/bowtie2-2.2.3/bowtie2-inspect /workspace/rna_seq_Arabidopsis_thaliana/data/athal > /workspace/rna_seq_Arabidopsis_thaliana/tophat//Day16/tmp/athal.fa
+[2025-08-11 22:47:34] Generating SAM header for /workspace/rna_seq_Arabidopsis_thaliana/data/athal
+[2025-08-11 22:47:34] Reading known junctions from GTF file
+[2025-08-11 22:47:34] Preparing reads
+	 left reads: min. length=50, max. length=50, 57985 kept reads (0 discarded)
+[2025-08-11 22:47:34] Using pre-built transcriptome data..
+[2025-08-11 22:47:34] Mapping left_kept_reads to transcriptome athal.bt2 with Bowtie2 
+[2025-08-11 22:47:37] Resuming TopHat pipeline with unmapped reads
+[2025-08-11 22:47:37] Mapping left_kept_reads.m2g_um to genome athal with Bowtie2 
+[2025-08-11 22:47:38] Mapping left_kept_reads.m2g_um_seg1 to genome athal with Bowtie2 (1/2)
+[2025-08-11 22:47:39] Mapping left_kept_reads.m2g_um_seg2 to genome athal with Bowtie2 (2/2)
+[2025-08-11 22:47:41] Searching for junctions via segment mapping
+[2025-08-11 22:47:41] Retrieving sequences for splices
+[2025-08-11 22:47:41] Indexing splices
+[2025-08-11 22:47:42] Mapping left_kept_reads.m2g_um_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2025-08-11 22:47:43] Mapping left_kept_reads.m2g_um_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2025-08-11 22:47:44] Joining segment hits
+[2025-08-11 22:47:44] Reporting output tracks
+-----------------------------------------------
+[2025-08-11 22:47:46] A summary of the alignment counts can be found in /workspace/rna_seq_Arabidopsis_thaliana/tophat//Day16/align_summary.txt
+[2025-08-11 22:47:46] Run complete: 00:00:12 elapsed
