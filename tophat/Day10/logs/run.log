@@ -1,1 +1,0 @@
-/home/software/tophat-2.0.14.Linux_x86_64/tophat -o /workspace/rna_seq_Arabidopsis_thaliana/tophat//Day10 -p 10 --max-multihits=10 -G /workspace/rna_seq_Arabidopsis_thaliana/data/athal_genes.gtf --transcriptome-index /workspace/rna_seq_Arabidopsis_thaliana/data  

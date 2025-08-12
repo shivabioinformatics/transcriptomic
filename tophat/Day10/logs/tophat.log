@@ -1,8 +1,0 @@
-
-[2025-08-11 22:44:45] Building transcriptome files with TopHat v2.0.14
------------------------------------------------
-[2025-08-11 22:44:45] Checking for Bowtie
-		  Bowtie version:	 2.2.3.0
-[2025-08-11 22:44:46] Checking for Bowtie index files (transcriptome)..
-[2025-08-11 22:44:46] Checking for Bowtie index files (genome)..
-Error: Could not find Bowtie 2 index files ( .*.bt2)
