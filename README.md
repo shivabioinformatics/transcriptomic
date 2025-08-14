@@ -3,3 +3,4 @@ Here, I perform RNA_Seq analysis to determine genes that are differentioally exp
 The refernce genome is under athal_chr.fa and the reference gene annotation are in "athal_genes.gtf". 
 
 
+# Trancriptomic
