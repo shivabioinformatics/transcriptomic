@@ -1,0 +1,26 @@
+
+[2025-08-14 21:05:41] Beginning TopHat run (v2.0.14)
+-----------------------------------------------
+[2025-08-14 21:05:41] Checking for Bowtie
+		  Bowtie version:	 2.2.3.0
+[2025-08-14 21:05:41] Checking for Bowtie index files (genome)..
+[2025-08-14 21:05:41] Checking for reference FASTA file
+	Warning: Could not find FASTA file /workspace/data/atha_chr.fa
+[2025-08-14 21:05:41] Reconstituting reference FASTA file from Bowtie index
+  Executing: /home/software/bowtie2-2.2.3/bowtie2-inspect /workspace/data/atha_chr > /workspace/result/without_gtf/Day16/tmp/atha_chr.fa
+[2025-08-14 21:05:42] Generating SAM header for /workspace/data/atha_chr
+[2025-08-14 21:05:42] Preparing reads
+	 left reads: min. length=50, max. length=50, 57985 kept reads (0 discarded)
+[2025-08-14 21:05:42] Mapping left_kept_reads to genome atha_chr with Bowtie2 
+[2025-08-14 21:05:45] Mapping left_kept_reads_seg1 to genome atha_chr with Bowtie2 (1/2)
+[2025-08-14 21:05:45] Mapping left_kept_reads_seg2 to genome atha_chr with Bowtie2 (2/2)
+[2025-08-14 21:05:45] Searching for junctions via segment mapping
+[2025-08-14 21:05:46] Retrieving sequences for splices
+[2025-08-14 21:05:46] Indexing splices
+[2025-08-14 21:05:46] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2025-08-14 21:05:47] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2025-08-14 21:05:47] Joining segment hits
+[2025-08-14 21:05:47] Reporting output tracks
+-----------------------------------------------
+[2025-08-14 21:05:49] A summary of the alignment counts can be found in /workspace/result/without_gtf/Day16/align_summary.txt
+[2025-08-14 21:05:49] Run complete: 00:00:07 elapsed

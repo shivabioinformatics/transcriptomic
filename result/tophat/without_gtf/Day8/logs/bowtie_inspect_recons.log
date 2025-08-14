@@ -1,0 +1,2 @@
+/home/software/bowtie2-2.2.3/bowtie2-inspect:24: DeprecationWarning: the imp module is deprecated in favour of importlib and slated for removal in Python 3.12; see the module's documentation for alternative uses
+  import imp

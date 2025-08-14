@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Create both result directories
+mkdir -p /workspace/result/without_gtf
+mkdir -p /workspace/result/with_gtf
+
+# Define samples
+SAMPLES="Day8 Day16"
+
+echo "Starting TopHat analysis with iteration..."
+
+# Loop through each sample
+for SAMPLE in $SAMPLES; do
+    echo "Processing $SAMPLE..."
+    
+    # Run without GTF
+    echo "  Running $SAMPLE without GTF..."
+    tophat -o /workspace/result/without_gtf/$SAMPLE \
+           /workspace/data/atha_chr \
+           /workspace/data/$SAMPLE.fastq
+    
+    # Run with GTF
+    echo "  Running $SAMPLE with GTF..."
+    tophat -o /workspace/result/with_gtf/$SAMPLE \
+           -G /workspace/data/athal_genes.gtf \
+           /workspace/data/atha_chr \
+           /workspace/data/$SAMPLE.fastq
+    
+    echo "  Completed $SAMPLE"
+done
+
+echo "All samples processed!"
