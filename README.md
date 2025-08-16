@@ -26,8 +26,8 @@ Cufflinks reconstructs transcript models from aligned reads and estimates expres
 **Discovery Summary:**
 | Sample | Genes | Transcripts | Single-exon | Multi-exon | Single-transcript genes |
 |--------|-------|-------------|-------------|------------|------------------------|
-| Day 8  | 186   | 193         | 114         | 64         | 166                    |
-| Day 16 | 81    | 93          | 21          | 72         | 63                     |
+| Day 8  | 172   | 192         | 114         | 73         | 180                    |
+| Day 16 | 80    | 92          | 119         | 68         | 69                     |
 
 ## Directory Structure
 
