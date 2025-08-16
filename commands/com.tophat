@@ -1,32 +1,15 @@
 #!/bin/bash
 
-# Create both result directories
-mkdir -p /workspace/result/without_gtf
-mkdir -p /workspace/result/with_gtf
+# tophat 
+DATADIR=/workspace/data
+WORKDIR=/workspace/result/tophat
+BWT2_IDX=/workspace/data/atha_chr
 
-# Define samples
-SAMPLES="Day8 Day16"
+# create result directory
+mkdir -p $WORKDIR/tophat/Day8
 
-echo "Starting TopHat analysis with iteration..."
+# run tophat
+tophat -o $WORKDIR/tophat/Day8 $BWT2_IDX $DATADIR/Day8.fastq
 
-# Loop through each sample
-for SAMPLE in $SAMPLES; do
-    echo "Processing $SAMPLE..."
-    
-    # Run without GTF
-    echo "  Running $SAMPLE without GTF..."
-    tophat -o /workspace/result/without_gtf/$SAMPLE \
-           /workspace/data/atha_chr \
-           /workspace/data/$SAMPLE.fastq
-    
-    # Run with GTF
-    echo "  Running $SAMPLE with GTF..."
-    tophat -o /workspace/result/with_gtf/$SAMPLE \
-           -G /workspace/data/athal_genes.gtf \
-           /workspace/data/atha_chr \
-           /workspace/data/$SAMPLE.fastq
-    
-    echo "  Completed $SAMPLE"
-done
-
-echo "All samples processed!"
+mkdir -p $WORKDIR/tophat/Day16
+tophat -o $WORKDIR/tophat/Day16 $BWT2_IDX $DATADIR/Day16.fastq
